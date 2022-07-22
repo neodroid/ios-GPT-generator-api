@@ -24,7 +24,7 @@ export default async (req, res) => {
 
     res.json({
         
-        ...response.data.choices
+        ...response.data.choices[0].text.split("|")
     });
     // console.log(response.data.choices.text) 
   }
